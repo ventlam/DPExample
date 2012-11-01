@@ -13,5 +13,14 @@ public class Client {
 	  * Facade
 	  */
 	 new FacadeModFacade().test();
+	 /*
+	  * Adapter
+	  */
+	 //创建需要被适配的对象
+	 AdapterAdaptee atee = new AdapterAdaptee();
+	 //创建客户端需要的接口对象
+	 AdapterTarget atget =new AdapterAdapter(atee);
+	 //请求处理
+	 atget.request();
  }
 }
