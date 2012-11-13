@@ -22,5 +22,10 @@ public class Client {
 	 AdapterTarget atget =new AdapterAdapter(atee);
 	 //请求处理
 	 atget.request();
+	 /*
+	  * Factory Method
+	  */
+	 FacMethodCreator fcp = new FacMethodConcreteCreator();
+	 fcp.export("Fuck");
  }
 }
