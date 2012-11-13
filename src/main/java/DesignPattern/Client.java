@@ -25,7 +25,9 @@ public class Client {
 	 /*
 	  * Factory Method
 	  */
-	 FacMethodCreator fcp = new FacMethodConcreteCreator();
-	 fcp.export("Fuck");
+	 FacMethodCreator fcpa = new FacMethodCreatorA();
+	 fcpa.export("Fuck");
+	 FacMethodCreator fcpb = new FacMethodCreatorB();
+	 fcpb.export("Hello");
  }
 }
